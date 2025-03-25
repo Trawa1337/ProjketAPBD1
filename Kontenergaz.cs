@@ -1,4 +1,6 @@
-﻿namespace ProjketAPBD1
+﻿using System;
+
+namespace ProjketAPBD1
 {
     public class Kontenergaz:Kontener,IHazardNotifier
     { 

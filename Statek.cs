@@ -1,4 +1,8 @@
-﻿namespace ProjketAPBD1
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ProjketAPBD1
 {
     public class Statek
     {
@@ -50,6 +54,7 @@
                 {
                     kontenery.Add(kontener);
                     kontener.statek = this;
+                    this.liczbakontenerow++;
                 }
                 else
                 {

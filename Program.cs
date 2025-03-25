@@ -1,4 +1,8 @@
-﻿namespace ProjketAPBD1
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ProjketAPBD1
 {
     internal class Program
     {
@@ -22,6 +26,10 @@
                 }
 
                 Console.WriteLine("2. Dodaj kontener");
+                if (statekList.Count != 0)
+                {
+                    Console.WriteLine("3. Usuń kontenerowiec");
+                }
 
                 if (kontenerList.Count != 0)
                 {
@@ -30,7 +38,7 @@
 
                 if (kontenerList.Count != 0 && statekList.Count != 0)
                 {
-                    Console.WriteLine("5.Dodaj kontener do statku");
+                    Console.WriteLine("5. Dodaj kontener do statku");
                     Console.WriteLine("6. Usuń kontener ze statku");
                 }
 
@@ -227,13 +235,6 @@
         Console.WriteLine("Niepoprawny wybór.");
         break;
 }
-
-
-
-
-
-
-
                 void WyswietlListe()
                 {
                     Console.Clear(); // Czyści ekran
@@ -265,6 +266,8 @@
                         }
                     }
                 }
+
+               
 
 
 
